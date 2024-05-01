@@ -1,0 +1,233 @@
+<DOCTYPE html>
+    <html lang="en">
+        <style>
+            body {
+                background-color: #50572c; 
+            }
+        </style>
+    </head>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <head>
+        <style>
+        body {
+            margin: 0; /* Elimina el margen alrededor del cuerpo */
+            height: 100vh; /* Ajusta la altura al 100% de la altura de la ventana del navegador */
+            width: 100vw; /* Ajusta el ancho al 100% de la anchura de la ventana del navegador */
+        }
+        
+        /* Media Query para pantallas con una anchura máxima de 800px */
+        @media only screen and (max-width: 800px) {
+            body {
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+        </style>
+        <img src="https://i.pinimg.com/236x/1d/00/19/1d00192650f841dea211be6b5dc9ed35.jpg" alt="ilustrativa">
+        <form action="envio.php" method="GET"></form>
+        <div style="text-align:center">
+            <p>Comprobante de existencia </p>
+            <p>para registro con microchip</p>
+            <p>Mascotas y Animales de compañia</p>
+   
+              
+           
+    
+        </div>
+        <label>Pegue aqui la etiqueta microchip</label>
+            <br />
+       
+            <textarea name="Etiqueta" rows="10" cols="30"></textarea>
+        <p>Datos del animal</p>
+        <form action="">
+            <label for="">Nombre de la mascota</label>
+            <input type="text" placeholder="nombre de la mascota"size="15" maxlength="15"/>
+            <br />
+            <select name="ESPECIE" id="ESPECIE">
+                <option value="perro">perro</option>
+                <option value="gato">gato</option>
+                
+    
+    
+    
+            </select>
+            <P><label for="">SEXO</label><br /></P>
+            <input type="radio"  value="macho"/>macho<br />
+            <input type="radio" value="hembra"/>hembra<br />
+            <P><label for="">ESTERILIZADO</label><br />
+            <input type="radio"  value="SI"/>SI<br /></P>
+            <input type="radio" value="NO"/>NO<br />
+            <br />
+            <label for="">AÑO DE NACIMIENTO</label>
+            <input type="date" />
+            <label for="">Raza</label>
+            <input type="text" placeholder="Raza"size="15" maxlength="15"/>
+            <br />
+          
+    
+          
+            <label for="">Color</label>
+            <input type="text" placeholder="Color"size="15" maxlength="15"/>
+            <br />
+            <form action="/accion.php" method="post">
+                <fieldset>
+                    <legend>Modo de obtencion:</legend>
+                    <select name="opciones[]" multiple>
+                        <option value="Recogido">Recogido</option>
+                        <option value="Reubicacion">Reubicacion</option>
+                        <option value="Regalo">Regalo</option>
+                        <option value="Nacido en casa">Nacido en casa</option>
+                        <option value="Compra">Compra</option>
+                       
+                    </select>
+                </fieldset>
+                <p>(si su mascota es adoptada marque recogido o reubicacion)</p>
+    
+            </form>
+            <form action="/accion.php" method="post">
+                <fieldset>
+                    <legend>Razon tenencia</legend>
+                    <select name="opciones[]" multiple>
+                        <option value="Compañia">Compañia</option>
+                        <option value="Asistencia">Asistencia</option>
+                        <option value="Regalo">Regalo</option>
+                        <option value="Terapia">Terapia</option>
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Seguridad">Seguridad</option>
+                        <option value="Deporte">Deporte</option>
+                        <option value="Exposición">Exposición</option>
+                        <option value="Reproducción">Reproducción</option>
+                        <option value="Caza">Casa</option>
+                       
+                    </select>
+                </fieldset>
+                <p>DATOS MÉDICO VETERINARIO o TÉCNICO VETERINARIO</p>
+                <br />
+                <label for="">Nombres</label><br />
+                <input type="text" placeholder="Nombres"/>
+                <br />
+                <label for="">Apellidos</label><br />
+                <input type="text" placeholder="Apellidos"/>
+                <br />
+                <label for="">Rut</label><br />
+                <input type="text" placeholder="Rut"/>
+                <br />
+                <label for="">Comuna</label><br />
+                <input type="text" placeholder="Comuna"/>
+    
+        
+    
+            </form>
+            <input type="radio"  value="macho"/>Médico Veterinario<br />
+            <input type="radio" value="Técnico veterinario"/>Técnico Veterinario<br />
+            <br />
+            <label for="">Fecha</label><br />
+            <input type="text" placeholder="Fecha procedimiento"/>
+            <br />
+            <label>Firma y timbre</label>
+            <br />
+            <textarea name="Firma" rows="10" cols="30"></textarea>
+           
+        </form>
+        <head>
+            <style>
+                .button {
+                    padding: 15px 25px;
+                    font-size: 24px;
+                    text-align: center;
+                    cursor: pointer;
+                    outline: none;
+                    color: #fff;
+                    background-color: #4CAF50;
+                    border: none;
+                    border-radius: 15px;
+                    box-shadow: 0 9px #999;
+                }
+        
+                .button:hover {background-color: #3e8e41}
+        
+                .button:active {
+                    background-color: #3e8e41;
+                    box-shadow: 0 5px #666;
+                    transform: translateY(4px);
+                }
+        
+                @media screen and (max-width: 600px) {
+                    .button {
+                        width: 100%;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+        
+        <button class="button" onclick="submitForm()">Enviar Cuestionario</button>
+        
+        
+        <script>
+        function submitForm() {
+            alert("Cuestionario enviado");
+            // Aquí puedes agregar el código para enviar tu cuestionario
+        }
+        </script>
+
+        
+        
+        </body>
+        <head>
+          <style>
+              .boton {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  font-size: 20px;
+                  cursor: pointer;
+                  text-align: center;
+                  text-decoration: none;
+                  outline: none;
+                  color: #fff;
+                  background-color: #4CAF50;
+                  border: none;
+                  border-radius: 15px;
+                  box-shadow: 0 9px #999;
+              }
+      
+              .boton:hover {background-color: #3e8e41}
+      
+              .boton:active {
+                  background-color: #3e8e41;
+                  box-shadow: 0 5px #666;
+                  transform: translateY(4px);
+              }
+          </style>
+      </head>
+      <body>
+      
+      <a href="https://www.tupagina.com" class="boton">Regresar</a>
+      
+      </body>
+    
+           
+
+    
+                
+                        
+    
+                  
+    
+    
+     
+        </form>
+    
+        
+      
+    
+    
+    
+    
+    
+    
+    </html>
+    
+    
+    </DOCTYPE>
